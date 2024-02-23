@@ -10,7 +10,7 @@ export default function FormPage() {
     function submitEmail(e) {
         e.preventDefault();
         console.log(email);
-        toast.success("E-mail enviado com sucesso!");
+        toast.success(`${email} enviado com sucesso!`);
         setTimeout(() => setEmail(''), 200);
     }
 

@@ -2,7 +2,11 @@
 
 Esta é uma aplicação web simples desenvolvida para coletar endereços de e-mail dos usuários. Atualmente, a aplicação não envia os e-mails recebidos para nenhum banco de dados, sendo apenas uma demonstração do formulário de coleta.
 
-A aplicação foi implementada utilizando React com Vite, aproveitando a familiaridade e facilidade de desenvolvimento proporcionadas pelo React. Além disso, foram utilizadas as bibliotecas `styled-components` para estilização e `react-toastify` para exibir notificações ao usuário sobre o envio do e-mail.
+Durante o desenvolvimento desta aplicação, optei pelo ReactJS por minha familiaridade com a ferramenta e sua facilidade de desenvolvimento, além das vantagens que ele oferece, principalmente para projetos maiores, como a reutilização de componentes e uma boa variedade de bibliotecas disponíveis. Para a estilização do site, escolhi a biblioteca styled-components, que possui a mesma capacidade do CSS padrão, mas facilita bastante a manutenção do código. Após a implementação do formulário de coleta, utilizei a biblioteca react-toastify, para que fosse enviado uma notificação de sucesso para o usuário ao enviar o e-mail.
+
+Para containerizar a aplicação, utilizei a imagem node:alpine como base devido à sua leveza e eficiência. Em seguida, configurei sua construção, incluindo a instalação de dependências e a construção dos arquivos necessários para produção. Optei por utilizar a imagem base do Nginx devido à sua capacidade de servir arquivos estáticos de forma eficiente, o que é ideal para aplicações front-end como esta. O Nginx atua como um servidor web leve, garantindo o desempenho e a confiabilidade da aplicação.
+
+Por último, para facilitar a execução do projeto em diferentes ambientes, criei um arquivo docker-compose.
 
 Você pode acessar a aplicação em produção através do seguinte link: [Redway Desafio](https://redway-desafio.vercel.app/)
 

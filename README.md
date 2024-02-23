@@ -27,7 +27,7 @@ Para executar esta aplicação localmente, você precisará ter o Docker instala
    Certifique-se de que seu Docker Daemon esteja em execução.
 
    ```
-   docker-compose up --build
+   docker-compose up -d --build
    ```
 
 4. **Acesse a Aplicação:**
